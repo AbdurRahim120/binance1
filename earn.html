@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/770e654504.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(24, 26, 32);
+        color: aliceblue;
+      }
+      .body{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+      }
+      .earn-banner-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+        display: flex;
+      }
+      .earn-banner-info {
+        width: 100%;
+      }
+      .earn-banner-info-btns {
+        display: flex;
+        gap: 30px;
+      }
+      .earn-banner-info-btn {
+        display: inline-flex;
+        flex: none;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 8px 20px;
+        background-color: rgb(24, 26, 32);
+        color: aliceblue;
+        border: none;
+      }
+      .earn-banner-info-btn:hover {
+        background-color: #fcd535;
+        color: black;
+        border: 1px solid;
+        border-radius: 20px;
+      }
+      .earn-banner-info-title {
+        padding: 64px 0;
+      }
+      .earn-banner-info-title h1 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .earn-banner-info-title h3 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #848e9c;
+      }
+      .earn-banner-img {
+        width: 374px;
+        margin-top: 28px;
+      }
+
+
+
+
+      .earn-middle-btns-container{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      .earn-middle-input{
+        width: 345px;
+        padding: 12px;
+        border-radius: 10px;
+        border: solid ;
+
+      }
+      .earn-middle-btns{
+        display: flex;
+        gap: 20px;
+      }
+      .earn-middle-btn{
+        padding: 12px 10px;
+        background-color: #2B3139;
+        color: aliceblue;
+        border: none;
+        border-radius: 10px;
+        gap: 30px;
+        
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        flex: none;
+
+      }
+      .earn-middle-btns-checkbox {
+        font-weight: 600;
+
+      }
+
+      @media screen and (max-width: 1200px) {
+        .earn-banner-img {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 1023px) {
+        .earn-middle-btns-container{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 20px;
+        }
+        .earn-middle-btn{
+          width: 45%;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .earn-banner-info-btns {
+          overflow-x: auto;
+        }
+        ::-webkit-scrollbar {
+          height: 1px;
+        }
+        .earn-banner-info-title h1 {
+          font-size: 32px;
+        }
+        .earn-banner-info-title h3 {
+          font-size: 16px;
+        }
+        .earn-banner-info-title{
+            padding-top: 48px;
+            padding-bottom: 24px;
+        }
+
+
+        .earn-middle-btns-container{
+          grid-template-columns: repeat(1,1fr);
+          gap: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+
+      <!-- <div class="earn-banner-container">
+          <div class="earn-banner-info">
+            <div class="earn-banner-info-btns">
+              <button class="earn-banner-info-btn">Overview</button>
+              <button class="earn-banner-info-btn">Simple Earn</button>
+              <button class="earn-banner-info-btn">High Yield</button>
+              <button class="earn-banner-info-btn">Auto-Invest</button>
+            </div>
+            <div class="earn-banner-info-title">
+              <h1>Earn</h1>
+              <h3>Simple & Secure. Search popular coins and start earning.</h3>
+            </div>
+          </div>
+          <div class="earn-banner-img">
+            <img src="./earn-illustration.svg" alt="" />
+          </div>
+        </div> -->
+    
+    
+    <div class="earn-middle-btns-container">
+      <input type="text" name="" class="earn-middle-input" placeholder="search coins">
+      <div class="earn-middle-btns">
+        <button class="earn-middle-btn">All Durations</button>
+        <button class="earn-middle-btn">All Products</button> 
+      </div>
+      <div class="earn-middle-btns-checkbox">
+        <input type="checkbox" name="" id="">
+        <span>Match My Assets</span>
+      </div>
+    </div>
+    </div>
+  
+  
+  
+    </body>
+</html>

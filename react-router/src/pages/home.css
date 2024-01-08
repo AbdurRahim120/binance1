@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(24, 26, 32);
+  color: aliceblue;
+  height: 100vh;
+}
+.fa-bars{
+  display: flex;
+  justify-content: flex-end;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1e2329;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+}
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+.active + .dropdown-content-2 {
+  display: block;
+}
+.dropdown-content-2{
+  display: none;
+}
+.dropdown-btn-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button-container-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.button-2 {
+    padding: 10px 15px;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.login-button-2 {
+    background-color: #2b3139;
+    color: #fff;
+}
+
+.register-button-2 {
+    background-color: #fcd535;
+    color: #0b0e11;
+}
+
+/* .button:hover {
+    background-color: #2980b9;
+} */
+.input-container {
+  position: relative;
+  padding:8px 30px;
+}
+
+.sidenav i{
+  margin-right: 10px;
+}
+
+.sidenav input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #2b3139;
+  border-radius: 5px;
+  outline: none;
+  background: #181a20;
+}
+
+.sidenav label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
+}

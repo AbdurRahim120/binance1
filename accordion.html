@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(24, 26, 32);
+        margin: 0;
+        padding: 0;
+      }
+      .faq-container {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 64px 0px;
+      }
+      .faq-container h1 {
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 64px;
+        color: #eaecef;
+      }
+      .faq-number {
+        padding: 4px 8px;
+        border: 1px solid #464646;
+        border-radius: 6px;
+        margin-right: 6px;
+      }
+
+      .accordion-section {
+        margin-bottom: 8px;
+        overflow: hidden;
+        border-radius: 15px;
+      }
+
+      .accordion-header {
+        color: #eaecef;
+        cursor: pointer;
+        padding: 20px 24px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .accordion-header:hover {
+        background-color: #22262d;
+      }
+      .accordion-header::before {
+        content: "\002B";
+        color: #eaecef;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      .active .accordion-header::before {
+        content: "\2212";
+        background-color: rgb(252, 213, 53);
+        color: #464646;
+        border-radius: 50%;
+        padding: 0px 5px;
+      }
+
+      .panel {
+        display: none;
+        padding: 0 40px;
+        color: rgb(132, 142, 156);
+        margin: 10px 0;
+      }
+
+      .active .panel {
+        display: block;
+        overflow: hidden;
+      }
+
+      @media screen and (max-width: 1200px) {
+      }
+      @media screen and (max-width: 1023px) {
+        .faq-container {
+          padding: 64px 24px;
+        }
+        .faq-container h1 {
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 48px;
+        }
+        .accordion-header {
+          padding: 15px;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .faq-container {
+          padding: 24px 16px;
+        }
+        .faq-container h1 {
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 24px;
+        }
+        .accordion-header {
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        .accordion-header-title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .faq-q {
+          margin-right: auto;
+        }
+        .panel {
+          padding: 0px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">1</span>
+            <span class="faq-q">What is a cryptocurrency exchange?</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            <span class="color">Cryptocurrency</span> exchanges are digital
+            marketplaces that enable users to buy and sell cryptocurrencies like
+            <span class="color">Bitcoin</span>,
+            <span class="color">Ethereum</span>,and{" "}
+            <span class="color">Tether</span>. The Binance exchange is the
+            largest crypto exchange by trade volume.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">2</span>
+            <span class="faq-q">What products does Binance provide?</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            Binance is the worlds leading cryptocurrency exchange, catering to
+            150 million registered users in over 180 countries. With low fees
+            and over 350 cryptocurrencies to trade, Binance is the preferred
+            exchange to trade Bitcoin, Altcoins, and other virtual assets.{" "}
+            <br />
+            <br />
+            With Binance users can:
+            <br />
+            <li>
+              Trade hundreds of cryptocurrencies on
+              <span class="color">Spot and Mrgina</span>
+            </li>
+            <li>
+              Trade hundreds of cryptocurrencies on
+              <span class="color">Spot and Mrgina</span>
+            </li>
+            <li>
+              Trade hundreds of cryptocurrencies on
+              <span class="color">Spot and Mrgina</span>
+            </li>
+            <li>
+              Trade hundreds of cryptocurrencies on
+              <span class="color">Spot and Mrgina</span>
+            </li>
+            <li>
+              Trade hundreds of cryptocurrencies on
+              <span class="color">Spot and Mrgina</span>
+            </li>
+          </p>
+        </div>
+      </div>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">3</span>
+            <span class="faq-q">
+              How to buy Bitcoin and other cryptocurrencies on Binance</span
+            >
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            There are several ways to buy cryptocurrencies on Binance. You can
+            use a credit/debit card, cash balance, or Apple Pay/Google Pay to
+            <span class="color">purchase crypto</span> on Binance. Before
+            getting started, please make sure youve completed marketplaces that
+            enable users to buy and sell cryptocurrencies like .
+          </p>
+        </div>
+      </div>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">4</span>
+            <span class="faq-q">How to track cryptocurrency prices</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            There are several ways to buy cryptocurrencies on Binance. You can
+            use a credit/debit card, cash balance, or Apple Pay/Google Pay to
+            <span class="color">purchase crypto</span> on Binance. Before
+            getting started, please make sure youve completed marketplaces that
+            enable users to buy and sell cryptocurrencies like .
+          </p>
+        </div>
+      </div>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">5</span>
+            <span class="faq-q"> How to trade cryptocurrencies on Binance</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            There are several ways to buy cryptocurrencies on Binance. You can
+            use a credit/debit card, cash balance, or Apple Pay/Google Pay to
+            <span class="color">purchase crypto</span> on Binance. Before
+            getting started, please make sure youve completed marketplaces that
+            enable users to buy and sell cryptocurrencies like . Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quisquam minima enim
+            earum magnam explicabo fuga esse quibusdam eveniet voluptatum. Odit?
+          </p>
+        </div>
+      </div>
+      <div class="accordion-section" onclick="toggleAccordion(this)">
+        <div class="accordion-header">
+          <div class="accordion-header-title">
+            <span class="faq-number">6</span>
+            <span class="faq-q">How to earn from crypto on Binance</span>
+          </div>
+        </div>
+        <div class="panel">
+          <p>
+            There are several ways to buy cryptocurrencies on Binance. You can
+            use a credit/debit card, cash balance, or Apple Pay/Google Pay to
+            <span class="color">purchase crypto</span> on Binance. Before
+            getting started, please make sure youve completed marketplaces that
+            enable users to buy and sell cryptocurrencies like . Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quisquam minima enim
+            earum magnam explicabo fuga esse quibusdam eveniet voluptatum. Odit?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+
+      function toggleAccordion(section) {
+        section.classList.toggle("active");
+      }
+
+      // function toggleAccordion1(){
+      //   const accordions = document.getElementsByClassName("accordion-section");
+      //   accordions.classList.toggle('active')
+      // }
+
+
+      // function f() {
+        
+
+      //   const accordions = document.getElementsByClassName("accordion-section");
+
+      //   for (let i = 0; i < accordions.length; i++) {
+      //     accordions[i].addEventListener("click", function () {
+      //       this.classList.toggle("active");
+      //     });
+      //   }
+      // }
+    </script>
+  </body>
+</html>

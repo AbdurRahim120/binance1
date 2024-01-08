@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/770e654504.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(24, 26, 32);
+        color: aliceblue;
+      }
+      .color-red {
+        color: #f6465d;
+      }
+      .market-header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+      }
+      .market-header-title {
+        display: flex;
+        gap: 30px;
+        padding: 24px 0;
+      }
+      .market-header-title h3 {
+        color: #848e9c;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .market-header-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        align-items: center;
+      }
+      .market-header-card {
+        box-sizing: border-box;
+        border: 1px solid #2b3139;
+        padding: 16px 8px;
+        border-radius: 20px;
+      }
+      .market-header-card-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px;
+      }
+
+      .option-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-y: hidden;
+        height: 50px;
+      }
+      .option-container i {
+        margin-left: 10px;
+      }
+      .options {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #5e6673;
+        overflow-x: auto;
+      }
+
+      .options p {
+        width: 100%;
+      }
+      .options p:hover {
+        color: #fff;
+      }
+      .options-all-btn {
+        padding: 1px;
+        background-color: #5e6673;
+      }
+      .markets-coins-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 25px;
+        background-color: #1e2026;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .markets-coins {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+      }
+      .markets-coins-right {
+        display: flex;
+      }
+      .text-12{
+        font-size: 12px;
+        color:#5e6673;
+      }
+
+      .text-right {
+        width: 160px;
+        text-align: right;
+      }
+
+      @media screen and (max-width: 1200px) {
+      }
+      @media screen and (max-width: 1023px) {
+        .market-header-card-amount {
+          display: none;
+        }
+
+        .markets-coins-price{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .market-header-container {
+            display: none;
+        }
+        .markets-coins-price{
+            display: block;
+        }
+        .markets-coins-actions{
+            display: none;
+        }
+
+        
+        .markets-coins-name{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .markets-coins-name-info{
+            display: flex;
+            flex-direction: column;
+        }
+        .text-right{
+            width: 100px;
+            text-align: right;
+        }
+
+        .markets-coins-right{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="market-header-container">
+      <div class="market-header-title">
+        <h1>Markets Overview</h1>
+        <h3>Trading Data</h3>
+      </div>
+      <div class="market-header-info">
+        <div class="market-header-card">
+          <h4>Highlight Coin</h4>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+        </div>
+        <div class="market-header-card">
+          <h4>Highlight Coin</h4>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+        </div>
+        <div class="market-header-card">
+          <h4>Highlight Coin</h4>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+        </div>
+        <div class="market-header-card">
+          <h4>Highlight Coin</h4>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+          <div class="market-header-card-info">
+            <div class="market-header-card-icon">
+              <i className="fa-brands fa-btc color-1"></i>
+              BTC
+            </div>
+            <h4 class='market-header-card-amount'>$318.50</h4>
+            <h4>+3.72%</h4>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="option-container">
+        <div class="options">
+            <p>Favorites</p>
+            <p>All Cryptos</p>
+            <p>Spot/Margin Market</p>
+            <p>Futures Markets</p>
+            <p>New Listing</p>
+            <p>Zones</p>
+
+        </div>
+    </div>
+    <div class="option-container">
+        <div class="options">
+            <button class="options-all-btn">All</button>
+            <p>All</p>
+            <p>Layer 1/Layer 2</p>
+            <p>Metaverse</p>
+            <p>Monitoring</p>
+            <p>Seed</p>
+            <p>Meme</p>
+            <p>Liquid Staking</p>
+            <p>Others</p>
+
+        </div>
+    </div> -->
+
+    <div class="markets-coins-container">
+      <div class="markets-coins">
+        <div class="markets-coins-name text-12">Name :</div>
+        <div class="markets-coins-right">
+            <div class="markets-coins-price text-right text-12">Price :</div>
+        <div class="markets-coins-change text-right text-12">Change :</div>
+        <div class="markets-coins-24hours text-right text-12">24 hours volume :</div>
+        <div class="markets-coins-cap text-right text-12">Market Cap :</div>
+        <div class="markets-coins-actions text-right text-12">Actions :</div>
+        </div>
+      </div>
+      <div class="markets-coins">
+        <div class="markets-coins-name">
+          <h4>
+            <i className="fa-brands fa-btc color-1"></i>
+            <div class="markets-coins-name-info">
+              <span>BTC</span>
+              <span class="text-small">Bitcoin</span>
+            </div>
+          </h4>
+        </div>
+        <div class="markets-coins-right">
+          <div class="markets-coins-price text-right">$42,500.00</div>
+          <div class="markets-coins-change color-red text-right">-6.57%</div>
+          <div class="markets-coins-24hours text-right">$40.25B</div>
+          <div class="markets-coins-cap text-right">$832.52B</div>
+          <div class="markets-coins-actions text-right">
+            <span>Details</span> <span>Trade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

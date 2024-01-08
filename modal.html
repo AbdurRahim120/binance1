@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: #f4f4f4;
+      }
+
+      #myModal {
+        display: none;
+        position: fixed;
+        top: 0px; /* Updated position to top */
+        right: 0px; /* Updated position to right */
+        width: 30%;
+        height: 100vh;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      #modalButton {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      #closeModal {
+        float: right;
+        cursor: pointer;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="modalButton" onclick="openModal()">Open Modal</button>
+
+    <div id="myModal">
+      <span id="closeModal" onclick="closeModal()">&times;</span>
+      <h2>Modal Content</h2>
+      <p>This is a simple modal example.</p>
+    </div>
+
+    <script>
+      const modal = document.getElementById("myModal");
+
+      function openModal() {
+        modal.style.display = "block";
+      }
+
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>
