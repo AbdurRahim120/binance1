@@ -1,12 +1,35 @@
-@media screen and (max-width: 1023px) {
-  .menu,
+@media screen and (max-width: 1200px) {
+  .sidenav.show {
+    display: block;
+    width: 40%;
+    opacity: 1;
+    overflow-x: auto;
+    visibility: visible;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    /* margin-top: 64px; */
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+  .right-nav {
+    margin-left: auto;
+    padding-right: 10px;
+  }
+  .dropdown-content li {
+    padding: 15px;
+  }
+  /* .menu,
   .fa-globe,
   .fa-square-caret-down {
     display: none !important;
   }
   .fa-bars {
     display: block;
-  }
+  } */
   .banner-container {
     padding: 48px 20px;
   }
@@ -20,13 +43,31 @@
 
 /* design for tablet  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+  .sidenav.show {
+    width: 50%;
+  }
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  .dropdown:hover .dropdown-content-2 {
+    display: block;
+  }
+  .fa-globe,
+  .fa-square-caret-down {
+    display: none;
+  }
+  .menu {
+    width: 50%;
+  }
   .right-nav {
-    gap: 0px;
+    gap: 0;
   }
   .nav-btn,
-  .fa-magnifying-glass,
-  .fa-bars {
+  .fa-magnifying-glass {
     margin: 0px 10px;
   }
   .banner-container {
@@ -71,7 +112,7 @@
     font-size: 36px;
     margin-bottom: 10px;
   }
-  .faq-container{
+  .faq-container {
     padding: 64px 24px;
   }
   .faq-container h1 {
@@ -91,18 +132,18 @@
   .rs-now {
     font-size: 16px;
   }
-  .footer{
+  .footer {
     flex-direction: column-reverse;
   }
-  .footer-icon-1{
+  .footer-icon-1 {
     grid-template-columns: repeat(auto-fill, 24px);
     margin-top: 18px;
   }
-  .footer-icon-column{
+  .footer-icon-column {
     margin-top: 48px;
     width: auto;
   }
-  .footer-icon-2{
+  .footer-icon-2 {
     display: flex;
     gap: 40px;
   }
@@ -115,7 +156,7 @@
 }
 
 /* design for mobile  */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   ::-webkit-scrollbar {
     width: 3px;
   }
@@ -123,14 +164,23 @@
   .fa-magnifying-glass,
   .banner-input,
   .fa-gift-2,
-  .banner-icons {
+  .banner-icons,
+  .right-nav {
     display: none;
   }
-  .nav-container {
-    padding: 0px 10px;
+
+  .menu,
+  .sidenav {
+    width: 100%;
   }
-  .nav-img {
-    width: 130px;
+  .sidenav.show {
+    width: 100%;
+  }
+  label {
+    padding-right: 16px;
+  }
+  .logo {
+    margin-left: 16px;
   }
   .banner-container {
     padding: 0px 10px;
@@ -218,7 +268,7 @@
   .download-info {
     width: auto;
   }
-  .download-img{
+  .download-img {
     flex-direction: column;
     gap: 24px;
   }
@@ -228,17 +278,16 @@
   .download-info h2 {
     font-size: 24px;
   }
-  .hidden{
+  .hidden {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .hidden img{
+  .hidden img {
     width: 135px;
     height: 45px;
     padding: 8px;
     border-radius: 15px;
-    
   }
   .faq-container {
     padding: 24px 16px;
@@ -249,19 +298,18 @@
     margin-bottom: 24px;
   }
   .accordion {
-    padding: 8px  10px;
+    padding: 8px 10px;
     font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: center;
   }
-  .faq-q{
+  .faq-q {
     margin-right: auto;
   }
   .panel {
-    padding: 0px 8px ;
+    padding: 0px 8px;
   }
-
 
   .verify-container {
     padding: 24px 0px;
@@ -283,7 +331,7 @@
     font-size: 14px;
     font-weight: 700;
   }
-  .footer-row{
+  .footer-row {
     display: none;
   }
 }

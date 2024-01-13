@@ -119,13 +119,13 @@
   float: right;
   margin-left: 5px;
 }
-.active:after {
+/* .active:after {
   content: "\2212";
   background-color: rgb(252, 213, 53);
   color: #464646;
   border-radius: 50%;
   padding: 5px 10px;
-}
+} */
 
 .panel {
   padding: 0 48px;
@@ -139,7 +139,7 @@
 
 /* vefiry section style  */
 .verify-container {
-  background-color: #1E2026;
+  background-color: #1e2026;
   color: #eaecef;
   text-align: center;
   padding: 48px 0px;
@@ -168,10 +168,10 @@
 footer {
   background-color: #181a20;
   color: #eaecef;
-  padding: 64px 24px ;
+  padding: 64px 24px;
 }
 
-.footer{
+.footer {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -179,22 +179,21 @@ footer {
   gap: 24px;
   text-align: left;
 }
-.footer-icon-column{
+.footer-icon-column {
   width: 20%;
 }
 
-
-.footer-icon-1{
+.footer-icon-1 {
   list-style: none;
   text-align: left;
   color: #eaecef;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   font-size: 20px;
   gap: 24px;
   margin-top: 24px;
 }
-.footer-icon-2{
+.footer-icon-2 {
   margin-top: 48px;
   list-style: none;
   text-align: left;
@@ -203,10 +202,10 @@ footer {
   font-size: 14px;
   font-weight: 600;
 }
-.footer-icon-2 span{
+.footer-icon-2 span {
   margin-left: 8px;
 }
-.fa-toggle-on-1{
+.fa-toggle-on-1 {
   font-size: 24px;
 }
 .footer-row {
@@ -235,7 +234,7 @@ footer {
   justify-content: space-between;
   margin-top: 16px;
 }
-.footer-links li{
+.footer-links li {
   margin-top: 8px;
 }
 
@@ -244,12 +243,11 @@ footer {
   color: #eaecef;
   font-size: 14px;
   font-weight: 500;
-  
 }
 .footer-links a:hover {
   color: rgb(252, 213, 53);
 }
-.top-40{
+.top-40 {
   margin-top: 40px;
 }
 

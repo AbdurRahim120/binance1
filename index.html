@@ -17,54 +17,518 @@
       src="https://kit.fontawesome.com/770e654504.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function toggleNav() {
+        const navMenus = document.querySelector(".nav-menus");
+        navMenus.classList.toggle("show");
+      }
+    </script>
   </head>
   <body>
     <header>
-      <!-- Header start here  -->
-      <nav>
-        <div class="nav-container">
-          <div class="left-nav">
-            <img class="nav-img" src="./images/Binance-preview.png" alt="" />
-            <div class="nav-menus">
-              <li class="menu">Buy Crypto</li>
-              <li class="menu">Markets</li>
-              <li class="menu">Trade</li>
-              <li class="menu">Futures</li>
-              <li class="menu">Earn</li>
-              <li class="menu">Square</li>
-              <li class="menu">More</li>
-            </div>
-          </div>
-          <div onclick="" class="right-nav">
-            <a href="#"
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffffff"
-              ></i
-            ></a>
-            <a class="nav-btn">Log In</a>
-            <a class="nav-btn register"
-              ><i class="fa-solid fa-gift" style="color: #000000"></i
-              >Register</a
-            >
-            <a href="#"
-              ><i
-                class="fa-regular fa-square-caret-down"
-                style="color: #ffffff"
-              ></i
-            ></a>
-            <a href="#"
-              ><i class="fa-solid fa-globe" style="color: #ffffff"></i
-            ></a>
-            <a href="#"
-              ><i class="fa-solid fa-bars" style="color: #ffffff"></i
-            ></a>
-          </div>
-        </div>
-      </nav>
-      <!-- Header end here  -->
+      <div>
+        <nav>
+          <nav class="main-nav">
+            <div class="left-nav">
+              <img class="logo" src="./images/Binance-preview.png" alt="" />
 
-      <!-- Banner section start -->
+              <ul class="menu">
+                <li>
+                  <a href="#">Buy Crypto</a>
+                </li>
+
+                <li>
+                  <a href="#">Markets</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#"> Trade <i class="fa-solid fa-angle-down"></i> </a>
+                  <div class="dropdown-content">
+                    <ul>
+                      <span class="text-small">Basic</span>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-laptop-file color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Spot</h4>
+                          <p class="text-small">
+                            Buy and sell on the Spot market with advanced tools
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-diagram-predecessor color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Margin</h4>
+                          <p class="text-small">
+                            Increase your profits with leverage
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-diagram-project color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>P2P</h4>
+                          <p class="text-small">
+                            Buy & sell cryptocurrencies using bank transfer and
+                            800+ options
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-sun-plant-wilt color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Convert & Block Trade</h4>
+                          <p class="text-small">
+                            The easiest way to trade at all sizes
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul>
+                      <span class="text-small">Advanced</span>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-kitchen-set color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Trading Bots</h4>
+                          <p class="text-small">
+                            Trade smarter with our various automated strategies
+                            - easy, fast and reliable
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-arrow-up-right-dots color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Copy Trading</h4>
+                          <p class="text-small">
+                            Follow the most popular traders
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>APIs</h4>
+                          <p class="text-small">
+                            Unlimited opportunities with one key
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#">
+                    Fetures <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-content">
+                    <ul>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-road-bridge color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>USDⓈ-M Futures</h4>
+                          <p class="text-small">Contracts settled in USDT</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-arrow-up-right-dots color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>COIN-M Futures</h4>
+                          <p class="text-small">
+                            Contracts settled in cryptocurrency
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-road-bridge color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Options</h4>
+                          <p class="text-small">
+                            USDT Options with limited downside and affordable
+                            entry
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <a href="#">Earn</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#">
+                    Square <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-content">
+                    <ul>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-kitchen-set color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Square</h4>
+                          <p class="text-small">
+                            Stay informed with everything crypto
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-arrow-up-right-dots color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Academy (Learn & Earn)</h4>
+                          <p class="text-small">
+                            Earn crypto by learning about blockchain
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Blog</h4>
+                          <p class="text-small">
+                            Expand your knowledge and get the latest insights
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-road-bridge color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Research</h4>
+                          <p class="text-small">
+                            Institutional-grade analysis, in-depth insights, and
+                            more
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#">
+                    More
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-content">
+                    <ul>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-kitchen-set color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>VIP & Institutional</h4>
+                          <p class="text-small">
+                            Your trusted digital asset platform for VIPs and
+                            institutions
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-arrow-up-right-dots color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Launchpad & Launchpool</h4>
+                          <p class="text-small">
+                            Discover and gain access to new token launches
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Mining Pool</h4>
+                          <p class="text-small">
+                            Mine more rewards by connecting to the pool
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Play</h4>
+                          <p class="text-small">
+                            Send, receive and spend crypto
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Loans</h4>
+                          <p class="text-small">
+                            Get an instant loan secured by crypto assets
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i class="fa-solid fa-kitchen-set color-1"></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Trading Bots</h4>
+                          <p class="text-small">
+                            Trade smarter with our various automated strategies
+                            - easy, fast and reliable
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-arrow-up-right-dots color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>Copy Trading</h4>
+                          <p class="text-small">
+                            Follow the most popular traders
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>APIs</h4>
+                          <p class="text-small">
+                            Unlimited opportunities with one key
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>APIs</h4>
+                          <p class="text-small">
+                            Unlimited opportunities with one key
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-basic-icon">
+                          <i
+                            class="fa-solid fa-house-flood-water-circle-arrow-right color-1"
+                          ></i>
+                        </div>
+                        <div class="dropdown-basic-info">
+                          <h4>APIs</h4>
+                          <p class="text-small">
+                            Unlimited opportunities with one key
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="right-nav">
+              <li class="dropdown">
+                <a href="#">
+                  <i class="hover fa-solid fa-magnifying-glass"></i>
+                </a>
+                <div class="dropdown-content dropdown-content-right">
+                  <ul>
+                    <li>
+                      <div class="input-container">
+                        <input
+                          type="text"
+                          id="exampleInput"
+                          placeholder="Coin, Function, Announcment "
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-basic-icon">
+                        <i class="fa-solid fa-arrow-up-right-dots color-1"></i>
+                      </div>
+                      <div class="dropdown-basic-info">
+                        <h4>COIN-M Futures</h4>
+                        <p class="text-small">
+                          Contracts settled in cryptocurrency
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="dropdown-basic-icon">
+                        <i class="fa-solid fa-road-bridge color-1"></i>
+                      </div>
+                      <div class="dropdown-basic-info">
+                        <h4>Options</h4>
+                        <p class="text-small">
+                          USDT Options with limited downside and affordable
+                          entry
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <a class="hover nav-btn">Log In</a>
+
+              <a class="nav-btn register">
+                <i class="fa-solid fa-gift" style="color: #000000"></i>
+                Register
+              </a>
+              <a href="#">
+                <i class="hover fa-regular fa-square-caret-down"></i>
+              </a>
+              <a href="#">
+                <i class="hover fa-solid fa-globe"></i>
+              </a>
+            </div>
+            <label class="menu-icon" onClick="sidenav()"> &#9776; </label>
+          </nav>
+        </nav>
+        <div class="sidenav">
+          <div class="button-container-0">
+            <button class="button-0 login-button-0">Login</button>
+
+            <button class="button-0 register-button-0">Register</button>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="input"
+              id="exampleInput"
+              placeholder="Coin, Function, Announcment "
+            />
+          </div>
+          <a href="#"> <i class="fa-brands fa-btc"></i>Buy Crypto </a>
+          <a href="#"> <i class="fa-solid fa-chart-simple"></i>Markets </a>
+
+          <button class="dropdown-btn" onClick="toggleDropdown(0)">
+            <div class="dropdown-btn-content">
+              <span>
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                Trade
+              </span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-content-2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <button class="dropdown-btn" onClick=" toggleDropdown(1)">
+            <div class="dropdown-btn-content">
+              <span>
+                <i class="fa-solid fa-book-atlas"></i>
+                Futures
+              </span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-content-2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a href="#"> <i class="fa-solid fa-earth-asia"></i>Earn </a>
+
+          <button class="dropdown-btn" onClick="toggleDropdown(2)">
+            <div class="dropdown-btn-content">
+              <span>
+                <i class="fa-solid fa-book-open"></i>
+                Square
+              </span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-content-2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <button class="dropdown-btn" onClick=" toggleDropdown(3)">
+            <div class="dropdown-btn-content">
+              <span>
+                <i class="fa-solid fa-table-cells-large"></i>
+                More
+              </span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </button>
+          <div class="dropdown-content-2">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <a href="#"> <i class="fa-solid fa-headset"></i>24/7 Chat Support </a>
+          <a href="#"> <i class="fa-solid fa-earth-asia"></i>Download </a>
+          <a href="#"> <i class="fa-solid fa-globe"></i>English </a>
+          <a href="#"> <i class="fa-solid fa-dollar-sign"></i>USD </a>
+        </div>
+      </div>
+
       <div class="banner-container">
         <div class="leftside-banner">
           <div class="banner-title">
@@ -190,8 +654,8 @@
           </div>
         </div>
       </div>
-      <!-- Banner section end -->
-
+    </header>
+    <main>
       <!-- download section start  -->
       <div class="download-container">
         <div class="download-img">
@@ -251,8 +715,7 @@
         </div>
       </div>
       <!-- download section end  -->
-    </header>
-    <main>
+
       <!-- FAQ start  -->
       <section class="faq-container">
         <h1>Frequently Asked Questions</h1>
@@ -393,22 +856,46 @@
         <div class="footer-icon-column">
           <h4>Community</h4>
           <ul class="footer-icon-1">
-            <li><i class="fa-brands fa-discord" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-telegram" style="color: #eaecef;"></i></i></li>
-            <li><i class="fa-brands fa-tiktok" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-facebook" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-x-twitter" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-reddit" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-weibo" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-instagram" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-nfc-symbol" style="color: #eaecef;"></i></li>
-            <li><i class="fa-brands fa-youtube" style="color: #eaecef;"></i></li>
+            <li><i class="fa-brands fa-discord" style="color: #eaecef"></i></li>
+            <li>
+              <i class="fa-brands fa-telegram" style="color: #eaecef"></i>
+            </li>
+            <li><i class="fa-brands fa-tiktok" style="color: #eaecef"></i></li>
+            <li>
+              <i class="fa-brands fa-facebook" style="color: #eaecef"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-x-twitter" style="color: #eaecef"></i>
+            </li>
+            <li><i class="fa-brands fa-reddit" style="color: #eaecef"></i></li>
+            <li><i class="fa-brands fa-weibo" style="color: #eaecef"></i></li>
+            <li>
+              <i class="fa-brands fa-instagram" style="color: #eaecef"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-nfc-symbol" style="color: #eaecef"></i>
+            </li>
+            <li><i class="fa-brands fa-youtube" style="color: #eaecef"></i></li>
             <li>...</li>
           </ul>
           <div class="footer-icon-2">
-            <li><i class="fa-solid fa-globe" style="color: #eaecef;"></i> <span>English</span></li>
-            <li><i class="fa-solid fa-circle-dollar-to-slot" style="color: #eaecef;"></i><span>USD-$</span></li>
-            <li><i class="fa-solid fa-toggle-on fa-toggle-on-1 " style="color: #eaecef;"></i></li>
+            <li>
+              <i class="fa-solid fa-globe" style="color: #eaecef"></i>
+              <span>English</span>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-circle-dollar-to-slot"
+                style="color: #eaecef"
+              ></i
+              ><span>USD-$</span>
+            </li>
+            <li>
+              <i
+                class="fa-solid fa-toggle-on fa-toggle-on-1"
+                style="color: #eaecef"
+              ></i>
+            </li>
           </div>
         </div>
         <div class="footer-row">
@@ -508,9 +995,25 @@
 
       <div class="copyright">
         <span class="copy">Binance&copy; 2023</span>
-         <span>Cookie Preferences</span>
+        <span>Cookie Preferences</span>
       </div>
     </footer>
+    <script>
+      function sidenav() {
+        const menu = document.querySelector(".sidenav");
+        menu.classList.toggle("show");
+      }
+      function toggleDropdown(index) {
+        var dropdownContent =
+          document.querySelectorAll(".dropdown-content")[index];
+        var dropdownBtn = document.querySelectorAll(".dropdown-btn")[index];
+
+        dropdownBtn.classList.toggle("active");
+        dropdownContent.style.display = dropdownBtn.classList.contains("active")
+          ? "block"
+          : "none";
+      }
+    </script>
 
     <script src="./js/accordion.js"></script>
   </body>
